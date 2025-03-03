@@ -17,7 +17,7 @@ app.use(cors()); // Enable CORS for all origins
 
 // Serve index.html from the root directory
 app.get("/", (req, res) => {
-  res.sendFile("here is nothing use netlify link");
+  res.send("here is nothing use netlify link");
 });
 
 app.post("/generate-notes", async (req, res) => {
